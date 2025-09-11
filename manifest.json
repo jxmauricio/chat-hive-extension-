@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Chat Hive",
+  "version": "1.0.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+   "action": {
+    "default_popup": "index.html"
+  },
+    "icons": {
+    "16": "chat_hive.png",
+    "32": "chat_hive.png",
+    "48": "chat_hive.png",
+    "128": "chat_hive.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
