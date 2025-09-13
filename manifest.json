@@ -12,6 +12,9 @@
     "48": "chat_hive.png",
     "128": "chat_hive.png"
   },
+  "background": {
+    "service_worker": "background.js"
+  },  
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
